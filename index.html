@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QWERy</title>
+    <link rel="stylesheet" href="./styles/scss/style.css">
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="banner">
+        <header class="header open">
+            <button class="header__burger--btn" id="burger">
+                <span></span><span></span><span></span>
+            </button>
+        <div class="header__logo">
+            <img src="assets/img/Logo.svg" alt="изображение логотипа">
+        </div>
+        <nav class="header__navigation">
+            <a href="#" >Information</a>
+            <a href="#" >About us</a>
+            <a href="#" >Culture</a>
+        </nav>
+        <!-- <input type="text" class="header__search-input" placeholder="Search..."> -->
+    </div>
+    <div class="header__clogan">
+        <p class="text__small">explore the Nature Beauty</p>
+        <p class="header__title-discovery">Discover <br> Wonderful Indonesia</p>
+        <a href="#downOne" class="header__scroll">Scroll down</a>
+        </header>
+    </div>
+
+    <section class="holidaty" id="downOne">
+        <div class="section__image">
+            <img src="assets/img/tengerra.png" alt="Изображение острова Тенггара" class="image_tengerra" height="650">
+        </div>
+        <div class="text__container">
+        <p class="text__small">EAST NUSA TENGGARA</p>
+        <h1 class="text__title">Have you enjoyed your holiday?</h1>
+        <p class="text__description">You will be amazed if you take part in this sailing Komodo island tour package. So it is also mandatory for you, besides enjoying Komodo tourism on Komodo Island, you also have to taste the marine tourism.  The beautiful waters of Komodo will make you meet many travelers from other countries.</p>
+        <a href="#downTwo" class="read__more">read more</a>
+        </div>
+    </section>
+
+    <section class="bromo" id="downTwo">
+        <div class="content__bromo">
+            <p class="text__small">BROMO</p>
+            <h1 class="text__title">Steady your steps, we will climb together!</h1>
+            <p class="text__description">Enjoying the vast expanse of the sea of ​​​​sand, witnessing the splendor of Mount Semeru that soars into the sky, and gazing at the beauty of the sun moving out of its bed or otherwise enjoying the dim twilight from the Bromo ridge is an unforgettable experience when visiting Bromo.</p>
+            <a href="#downThree" class="read__more">read more</a>
+        </div>
+    </section>
+
+    <section class="culture" id="downThree">
+        <div class="text__container"> 
+            <p class="text__small">INDONESIAN CULTURE</p>
+            <h1 class="text__title">Our culture here is very friendly to people</h1>
+            <p class="text__description">known for his politeness, manners and gentleness. This becomes a characteristic when they mingle with other tribes and become basic traits that are passed down by their ancestors.</p>
+            <a href="#downFour" class="read__more">read more</a>
+            
+        </div>
+        <div class="culture__img"> 
+            <img src="assets/img/01.png" alt="Изображение Индонезийских девушек" class="image__cult" height="600">
+        </div>
+    </section>
+
+    <footer class="footer"  id="downFour">
+        <section class="section__registration">
+            <div>
+                <img class="header__logo" src="assets/img/Logo.svg" alt="изображение логотипа">
+            </div>
+            <p class="footer__starting">Ready to explore?</p>
+            <input type="button" class="footer__button-start" value="Get started">
+
+            <div class="modal" id="registration__modal">
+                <div class="modal__content">
+                    <span class="modal__close-button">&times;</span>
+                        <div class="modal__registration-form hidden">
+                            <form action="#" class="form" name="form">
+                        <div class="modal__container-registration">
+                            <label for="userName">Name</label> <br>
+                            <input type="text" name="userName" class="userName" id='userName' placeholder="your name"> <br>
+                            <span class="error__name" id="error"></span>
+                        </div>
+                        <div class="modal__container-registration">
+                            <label for="email">Email</label> <br>
+                            <input type="email" name="email" id="email" class="email" placeholder="your email"> <br>
+                            <span class="error__email" id="error"></span>
+                        </div>
+                        <div class="modal__container-registration">
+                            <label for="password">Password</label> <br>
+                            <input type="password" name="password" id="password" class="password" placeholder="password" > <br>
+                            <span class="error__password" id="error"></span>
+                        </div>
+                        <div class="modal__container-registration">
+                            <label for="phone">Phone</label> <br>
+                            <input type="phone" name="phone" id="phone" class="phone" placeholder="phone"> <br>
+                            <span class="error__phone" id="error"></span>
+                        </div>
+                        <input type="checkbox" id="checkbox" name="checkbox" >
+                        <label for="checkbox"> <a href="#" class="data">Personal data processing agreement</a></label>
+                        <div  class="container_registration"> <br>
+                            <input id="button" name="button" type="submit" value="register" >
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <section class="footer__services">
+            <h1 class="footer__holiday-vacation">Let's go on vacation, Make your day</h1>
+                <div class="footer__services-container">
+                    <ul class="footer__services-list">
+                        <li class="headline">Services</li>
+                        <li>Email Marketing</li>
+                        <li>Campaing</li>
+                        <li>Branding</li>
+                    </ul>
+            
+                <ul class="footer__services-list">
+                    <li class="headline">About</li>
+                    <li>Our Story</li>
+                    <li>Benefits</li>
+                    <li>Team</li>
+                    <li>Careers</li>
+                </ul>
+                
+                    <ul class="footer__services-list">
+                        <li class="headline">Help</li>
+                        <li>FAQs</li>
+                        <li>Contact Us</li>
+                    </ul>
+                
+            </div>
+        </section>
+
+        <div class="footer__social-network">
+            <img src="assets/img/facebook.png" alt="facebook" class="footer__social-icon">
+            <img src="assets/img/twitter.png" alt="twitter" class="footer__social-icon">
+            <img src="assets/img/instagram.png" alt="instagram" class="footer__social-icon">
+        </div>
+
+        <div class="footer__down">
+            <p>Copyright 2021 QWERy</p>
+        </div>
+
+        <div id="cookie-banner">
+            <p>This site uses cookies to improve user experience. <a href="/cookie-policy" style="color: #3eb53c;">Find out more</a></p>
+            <button id="accept-cookies">Accept</button>
+            <button id="decline-cookies">Reject</button>
+            </div>
+    </footer>
+    
+<script src="script.js"></script>
+</body>
+</html>
