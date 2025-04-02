@@ -104,15 +104,15 @@ checkboxInput.addEventListener('click', function() {
 });
 
 
-document.getElementById('accept-cookies').addEventListener('click', function() {
-    // Логика для принятия куки
-    document.getElementById('cookie-banner').style.display = 'none';
-});
+// document.getElementById('accept-cookies').addEventListener('click', function() {
+//     // Логика для принятия куки
+//     document.getElementById('cookie-banner').style.display = 'none';
+// });
 
-document.getElementById('decline-cookies').addEventListener('click', function() {
-    // Логика для отказа от куки
-    document.getElementById('cookie-banner').style.display = 'none';
-});
+// document.getElementById('decline-cookies').addEventListener('click', function() {
+//     // Логика для отказа от куки
+//     document.getElementById('cookie-banner').style.display = 'none';
+// });
 
 
 document.getElementById('burger').addEventListener('click', function(){
