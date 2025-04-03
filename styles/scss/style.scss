@@ -55,7 +55,12 @@ html {
 }
 
 body {
-  background-color: #000000;
+  background: rgb(187,167,177);
+background: linear-gradient(180deg, rgba(187,167,177,1) 0%, rgba(146,113,125,1) 52%, rgba(112,95,111,1) 100%);
+//   background: rgb(25,40,73);
+// background: radial-gradient(circle, rgba(25,40,73,1) 18%, rgba(0,0,0,1) 95%);
+  // background: rgb(2,0,36);
+  // background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(234,238,255,0.8520658263305322) 100%);
   font-family: "Cormorant", serif;
   font-optical-sizing: auto;
   font-style: normal;
@@ -275,6 +280,7 @@ body {
 
 .image_tengerra {
   height: 600px;
+  
   @media (max-width: 1000px) {
     height: 550px;
   }

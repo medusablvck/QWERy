@@ -15,7 +15,8 @@ html {
 }
 
 body {
-  background-color: #000000;
+  background: rgb(187, 167, 177);
+  background: linear-gradient(180deg, rgb(187, 167, 177) 0%, rgb(146, 113, 125) 52%, rgb(112, 95, 111) 100%);
   font-family: "Cormorant", serif;
   font-optical-sizing: auto;
   font-style: normal;
