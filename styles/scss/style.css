@@ -1,12 +1,12 @@
 @import "./normalize.css";
 @import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Alegreya:ital,wght@0,400..900;1,400..900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Great+Vibes&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:wght@100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Prata&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 * {
-  border: 1px solid red;
   box-sizing: border-box;
   transition: all 0.5s ease;
 }
 
-p, h2 {
+p,
+h2 {
   text-align: center;
 }
 
@@ -15,14 +15,14 @@ html {
 }
 
 body {
-  background-color: rgb(0, 0, 0);
+  background-color: #000000;
   font-family: "Cormorant", serif;
   font-optical-sizing: auto;
   font-style: normal;
 }
 
 .banner {
-  background-image: url("/QWERy/assets/img/Background.png");
+  background-image: url("/assets/img/Background.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -33,25 +33,27 @@ body {
     height: 70vh;
   }
 }
+
 @media (max-width: 1000px) {
   .header__logo {
     width: 70px;
   }
 }
+
 .text__small {
   color: #ffc178;
-  font-size: 1.2em;
+  font-size: 1.2rem;
   text-align: center;
 }
 @media (max-width: 700px) {
   .text__small {
-    font-size: 1.1em;
+    font-size: 1.1rem;
     width: 50vw;
   }
 }
 @media (max-width: 500px) {
   .text__small {
-    font-size: 1em;
+    font-size: 1rem;
     padding-top: 50px;
   }
 }
@@ -69,7 +71,7 @@ body {
 .text__description {
   color: white;
   width: 500px;
-  font-size: 1.1em;
+  font-size: 1.1rem;
   font-size: 1.2rem;
   letter-spacing: 1.03px;
   width: 80%;
@@ -96,22 +98,23 @@ body {
 @media (max-width: 900px) {
   .text__container {
     width: auto;
-    font-size: 1.1em;
+    font-size: 1.1rem;
     letter-spacing: 1.8px;
   }
 }
+
 .text__title {
   color: white;
-  font-size: 3em;
+  font-size: 3rem;
 }
 @media (max-width: 1100px) {
   .text__title {
-    font-size: 2em;
+    font-size: 2rem;
   }
 }
 @media (max-width: 900px) {
   .text__title {
-    font-size: 1.8em;
+    font-size: 1.8rem;
     width: 260px;
   }
 }
@@ -119,12 +122,12 @@ body {
   .text__title {
     width: 250px;
     text-align: center;
-    font-size: 1.6em;
+    font-size: 1.6rem;
   }
 }
 @media (max-width: 700px) {
   .text__title {
-    font-size: 1em;
+    font-size: 1rem;
   }
 }
 @media only screen and (device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) {
@@ -140,6 +143,7 @@ body {
   border: none;
   text-decoration: none;
 }
+
 .header__burger--btn {
   display: none;
   position: relative;
@@ -197,16 +201,17 @@ body {
 .header__search-input {
   border: 0;
   background-color: transparent;
-  font-size: 1.1em;
+  font-size: 1.1rem;
 }
 .header__navigation > a {
   color: white;
   text-decoration: none;
-  font-size: 1.1em;
+  font-size: 1.2rem;
+  padding: 20px;
 }
 @media (max-width: 900px) {
   .header__navigation > a {
-    font-size: 1.25em;
+    font-size: 1.1rem;
   }
 }
 @media (max-width: 800px) {
@@ -222,12 +227,13 @@ body {
     top: 0;
     padding: 75px 15px 15px 15px;
     background-color: rgba(78, 78, 78, 0.3);
-    font-size: 1.3em;
+    font-size: 1.3rem;
     border-radius: 5px;
     transition: transform 0.5s;
     transform: translateX(-100%);
   }
 }
+
 @media (max-width: 800px) {
   .header.open .header__navigation {
     transform: translateX(0);
@@ -243,8 +249,13 @@ body {
 
 .header__title-discovery {
   color: white;
-  font-size: 3em;
+  font-size: 3rem;
   text-align: center;
+}
+@media (max-width: 600px) {
+  .header__title-discovery {
+    font-size: 2rem;
+  }
 }
 
 .header__scroll {
@@ -255,7 +266,7 @@ body {
 }
 @media only screen and (device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) {
   .header__scroll {
-    font-size: 1.245em;
+    font-size: 1.245rem;
   }
 }
 
@@ -263,6 +274,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
+  justify-items: center;
 }
 @media (max-width: 700px) {
   .holidaty {
@@ -271,6 +283,7 @@ body {
     align-items: center;
   }
 }
+
 .image_tengerra {
   height: 600px;
 }
@@ -307,7 +320,7 @@ body {
 }
 
 .bromo {
-  background-image: url("/QWERy//assets/img/bromo.png");
+  background-image: url("/assets/img/bromo.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -330,6 +343,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
+  justify-items: center;
 }
 @media (max-width: 700px) {
   .culture {
@@ -363,11 +377,12 @@ body {
     height: 80vh;
   }
 }
-@media (max-width: 600px) and (max-width: 600px) {
+@media (max-width: 600px) {
   .image__cult {
     height: auto;
   }
 }
+
 .modal {
   display: none;
   position: fixed;
@@ -417,7 +432,7 @@ body {
 }
 .form .data {
   color: rgb(255, 159, 159);
-  letter-spacing: 0.1em;
+  letter-spacing: 0.1rem;
   text-decoration: none;
 }
 .form .modal__container-registration {
@@ -425,34 +440,10 @@ body {
   padding: 10px;
 }
 .form #button {
-  width: 10vw;
-  height: 2.5vw;
+  width: auto;
   border-radius: 8px;
   background-color: #fdaf56;
   font-weight: bold;
-}
-@media (max-width: 900px) {
-  .form #button {
-    width: 11vw;
-    height: 3vw;
-  }
-}
-@media (max-width: 800px) {
-  .form #button {
-    width: 13vw;
-    height: 3vw;
-  }
-}
-@media (max-width: 700px) {
-  .form #button {
-    height: 3.5vw;
-  }
-}
-@media (max-width: 500px) {
-  .form #button {
-    width: 12vw;
-    height: 5vw;
-  }
 }
 
 .section__registration {
@@ -464,21 +455,21 @@ body {
 
 .footer__starting {
   color: white;
-  font-size: 1.2em;
+  font-size: 1.2rem;
 }
 @media (max-width: 1000px) {
   .footer__starting {
-    font-size: 1.2em;
+    font-size: 1.2rem;
   }
 }
 @media (max-width: 800px) {
   .footer__starting {
-    font-size: 1.05em;
+    font-size: 1.05rem;
   }
 }
 @media (max-width: 500px) {
   .footer__starting {
-    font-size: 1.09em;
+    font-size: 1.09rem;
   }
 }
 
@@ -492,7 +483,7 @@ body {
   .footer__button-start {
     width: 15vw;
     height: 5vw;
-    font-size: 1.2em;
+    font-size: 1.2rem;
   }
 }
 @media (max-width: 800px) {
@@ -504,7 +495,7 @@ body {
   .footer__button-start {
     width: 120px;
     height: auto;
-    font-size: 1.1em;
+    font-size: 1.1rem;
   }
 }
 @media (max-width: 600px) {
@@ -519,28 +510,28 @@ body {
 }
 @media (max-width: 1000px) {
   .footer__holiday-vacation {
-    font-size: 1.5em;
+    font-size: 1.5rem;
   }
 }
 @media (max-width: 800px) {
   .footer__holiday-vacation {
     width: auto;
-    font-size: 1.4em;
+    font-size: 1.4rem;
   }
 }
 @media (max-width: 700px) {
   .footer__holiday-vacation {
-    font-size: 1.3em;
+    font-size: 1.3rem;
   }
 }
 @media (max-width: 500px) {
   .footer__holiday-vacation {
-    font-size: 1em;
+    font-size: 1rem;
   }
 }
 @media only screen and (device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) {
   .footer__holiday-vacation {
-    font-size: 1em;
+    font-size: 1rem;
   }
 }
 
@@ -548,27 +539,27 @@ body {
   color: white;
   display: flex;
   justify-content: space-around;
-  font-size: 1.1em;
+  font-size: 1.1rem;
 }
 @media (max-width: 1000px) {
   .footer__services-container {
-    font-size: 1.3em;
+    font-size: 1.3rem;
   }
 }
 @media (max-width: 900px) {
   .footer__services-container {
-    font-size: 1.02em;
+    font-size: 1.02rem;
     line-height: 1.5;
   }
 }
 @media (max-width: 600px) {
   .footer__services-container {
-    font-size: 1em;
+    font-size: 1rem;
   }
 }
 @media (max-width: 500px) {
   .footer__services-container {
-    font-size: 0.78em;
+    font-size: 0.78rem;
   }
 }
 .footer__services-container .footer__services-list {
@@ -602,7 +593,7 @@ body {
 }
 @media only screen and (device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) {
   .footer__down {
-    font-size: 0.8em;
+    font-size: 0.8rem;
   }
 }
 
