@@ -447,6 +447,12 @@ body {
   font-weight: bold;
 }
 
+.footer__logo {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
 .section__registration {
   display: flex;
   justify-content: space-between;
@@ -506,7 +512,6 @@ body {
 }
 .footer__holiday-vacation {
   color: white;
-  width: 300px;
   padding: 20px;
 }
 @media (max-width: 1000px) {
@@ -516,7 +521,6 @@ body {
 }
 @media (max-width: 800px) {
   .footer__holiday-vacation {
-    width: auto;
     font-size: 1.4rem;
   }
 }
@@ -540,7 +544,8 @@ body {
   color: white;
   display: flex;
   justify-content: space-around;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
+  gap: 50px;
 }
 @media (max-width: 1000px) {
   .footer__services-container {
@@ -565,6 +570,7 @@ body {
 }
 .footer__services-container .footer__services-list {
   list-style-type: none;
+  padding: 0.2rem;
 }
 
 .headline {
