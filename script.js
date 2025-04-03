@@ -78,7 +78,7 @@ form.addEventListener('submit', function(evt)  {
 
     const phone = phonedInput.value;
     if(phone.trim() === '') {
-        errorPhone.textContent = 'Error: Please enter your phone number in the format +1 (555) 555-5555'
+        errorPhone.textContent = 'Error: Please enter your phone number' 
         isValid = false;
     }
 
@@ -104,15 +104,15 @@ checkboxInput.addEventListener('click', function() {
 });
 
 
-// document.getElementById('accept-cookies').addEventListener('click', function() {
-//     // Логика для принятия куки
-//     document.getElementById('cookie-banner').style.display = 'none';
-// });
+document.getElementById('accept-cookies').addEventListener('click', function() {
+    // Логика для принятия куки
+    document.getElementById('cookie-banner').style.display = 'none';
+});
 
-// document.getElementById('decline-cookies').addEventListener('click', function() {
-//     // Логика для отказа от куки
-//     document.getElementById('cookie-banner').style.display = 'none';
-// });
+document.getElementById('decline-cookies').addEventListener('click', function() {
+    // Логика для отказа от куки
+    document.getElementById('cookie-banner').style.display = 'none';
+});
 
 
 document.getElementById('burger').addEventListener('click', function(){

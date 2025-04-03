@@ -55,12 +55,7 @@ html {
 }
 
 body {
-  background: rgb(187,167,177);
-background: linear-gradient(180deg, rgba(187,167,177,1) 0%, rgba(146,113,125,1) 52%, rgba(112,95,111,1) 100%);
-//   background: rgb(25,40,73);
-// background: radial-gradient(circle, rgba(25,40,73,1) 18%, rgba(0,0,0,1) 95%);
-  // background: rgb(2,0,36);
-  // background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(234,238,255,0.8520658263305322) 100%);
+  background-color: black;
   font-family: "Cormorant", serif;
   font-optical-sizing: auto;
   font-style: normal;
@@ -280,6 +275,7 @@ background: linear-gradient(180deg, rgba(187,167,177,1) 0%, rgba(146,113,125,1) 
 
 .image_tengerra {
   height: 600px;
+  margin-top: 10vh;
   
   @media (max-width: 1000px) {
     height: 550px;
@@ -419,22 +415,6 @@ background: linear-gradient(180deg, rgba(187,167,177,1) 0%, rgba(146,113,125,1) 
     border-radius: 8px;
     background-color: #fdaf56;
     font-weight: bold;
-
-    // @media (max-width: 900px) {
-    //   width: 11vw;
-    //   height: 3vw;
-    // }
-    // @media (max-width: 800px) {
-    //   width: 13vw;
-    //   height: 3vw;
-    // }
-    // @media (max-width: 700px) {
-    //   height: 3.5vw;
-    // }
-    // @media (max-width: 500px) {
-    //   width: 12vw;
-    //   height: 5vw;
-    // }
   }
 }
 
@@ -541,7 +521,7 @@ background: linear-gradient(180deg, rgba(187,167,177,1) 0%, rgba(146,113,125,1) 
 .footer__social-network {
   display: flex;
   justify-content: end;
-  gap: 30px;
+  gap: 35px;
   padding: 1rem;
 
   .footer__social-icon {
