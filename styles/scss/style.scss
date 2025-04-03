@@ -62,8 +62,8 @@ body {
 }
 
 .banner {
-  background-image: url("/assets/img/Background.png"); // относительный путь для локального сервера
-  // background-image: url("/QWERy/assets/img/Background.png"); //без имени репозитория будет отображаться фото на локальном сервере
+  // background-image: url("/assets/img/Background.png"); // относительный путь для локального сервера
+  background-image: url("/QWERy/assets/img/Background.png"); //без имени репозитория будет отображаться фото на локальном сервере
   @include bk_img;
   height: 100vh;
   @media (max-width: 600px) {
@@ -298,8 +298,8 @@ body {
 
 // Секция БРОМО
 .bromo {
-  background-image: url("/assets/img/bromo.png");
-  // background-image: url("/QWERy/assets/img/bromo.png");
+  // background-image: url("/assets/img/bromo.png");
+  background-image: url("/QWERy/assets/img/bromo.png");
   @include bk_img;
   padding: 10rem 0;
   width: 90%;
